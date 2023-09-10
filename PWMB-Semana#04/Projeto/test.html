@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Texto sobre Imagem</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            text-align: center; /* Centraliza o texto vertical e horizontalmente */
+            color: white; /* Cor do texto */
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            background-image: url('image/office-620822_1920.jpg'); /* Caminho da imagem */
+            background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+            background-position: center; /* Centraliza a imagem na div */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Coloca a imagem no fundo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Na FIX HelpDesk, nossa missão é simplificar o suporte de TI e torná-lo acessível a todos. Estamos empenhados em oferecer serviços de alta qualidade que permitam que nossos clientes se concentrem no que é mais importante para eles - seus negócios.</p>
+        <div class="background-image"></div>
+    </div>
+</body>
+</html>
