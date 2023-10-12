@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#D9D9D9;
+}
+/* Estilizando o menu de navegação */
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Estilizando o conteúdo para ocupar o espaço entre o topo e o footer */
+.content {
+    min-height: 100%;
+    margin-bottom: -60px; /* Ajuste a margem inferior para coincidir com a altura do footer */
+    padding-bottom: 60px; /* Ajuste o padding inferior para coincidir com a altura do footer */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box {
+    width: 30%;
+    /* Ajuste a largura conforme necessário */
+}
+
+
+
+/* Estilizando o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Definindo a largura máxima do conteúdo no centro */
+p {
+    max-width: 700px;
+    margin: 0 auto;
+}
