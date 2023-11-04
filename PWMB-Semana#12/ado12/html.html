@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+    <main>
+        <form id="cliente-form">
+            <div class="container">
+
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for "sobrenome>Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+                <div class="input-group input-cliente">
+                    <label for="tipo-cliente">Tipo de Cliente:</label>
+                    <select name="tipo-cliente" id="tipo-cliente" required>
+                        <option value="ouro">Bronze</option>
+                        <option value="prata">Prata</option>
+                        <option value="bronze">Ouro</option>
+                        <option value="bronze">Platina</option>
+                        <option value="bronze">Diamante</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="data-nascimento">Data Nascimento:</label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="numero">Número:</label>
+                    <input type="number" name="numero" id="numero" required>
+                </div>
+
+                <div class="input-group btn-incluir">
+                    <input type="button" value="Concluir" id="salvar" onclick="salvarCliente()" class="btn-form">
+                    <input type="button" value="Limpar" id="limpar" onclick="limparCampos()" class="btn-form">
+                    <input type="button" value="Alterar" id="alterar" style="display: none" onclick="alterarCliente()" class="btn-form">
+                    
+                </div>
+            </div>
+        </form>
+
+        <div class="clientes-cadastrados">
+            <ul id="clientes">
+
+            </ul>
+        </div>
+    </main>
+    
+
+</body>
+<script src="script.js" defer></script>
+</html>
