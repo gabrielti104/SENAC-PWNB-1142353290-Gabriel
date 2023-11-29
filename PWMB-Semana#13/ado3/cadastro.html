@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Clientes</h1>
+        <form id="clienteForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" required>
+
+            <label for="cep">CEP :</label>
+            <input type="text" id="cep" pattern="\d{5}-\d{3}" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco">
+
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required>
+
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" maxlength="2" required>
+
+            <label for="tipoCliente">Tipo de Cliente:</label>
+            <select id="tipoCliente">
+                <option value="Bronze">Bronze</option>
+                <option value="Prata">Prata</option>
+                <option value="Ouro">Ouro</option>
+                <option value="Platina">Platina</option>
+                <option value="Diamante">Diamante</option>
+
+
+            </select>
+
+            <button type="button" onclick="incluirCliente()">Cadastrar</button>
+            <button type="button" onclick="listarClientes()">Listar</button>
+            <button type="button" onclick="excluirCliente()">Excluir</button>
+            
+
+            <!-- Botões adicionados -->
+            <button type="button" onclick="confirmarCadastro()">Confirmar</button>
+        </form>
+        
+
+        <ul id="listaClientes"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
