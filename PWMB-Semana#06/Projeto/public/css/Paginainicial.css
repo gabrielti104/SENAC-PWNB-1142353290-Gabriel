@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#D9D9D9;
+}
+/* Estilizando o menu de navegação */
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Estilizando o conteúdo para ocupar o espaço entre o topo e o footer */
+.content {
+    min-height: 100%;
+    padding-bottom: 60px; /* Ajuste o padding inferior para coincidir com a altura do footer */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box {
+    width: 30%;
+    /* Ajuste a largura conforme necessário */
+}
+
+
+
+/* Estilizando o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Definindo a largura máxima do conteúdo no centro */
+p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #01282e;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #f88f06;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #f88f06;
+    }   
+}
