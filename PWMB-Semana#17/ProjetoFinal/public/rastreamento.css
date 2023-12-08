@@ -1,0 +1,9 @@
+.content {
+    color:#275AA7;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*CSS para ocultar o botão de rastreamento dos Correios - Cole no Custom CSS ou no campo de CSS Adicinal no seu tema*/
+input.wc-correios-tracking__button.button {
+    display: none !important;
+}
